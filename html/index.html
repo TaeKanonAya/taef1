@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Home</title>
+    <title>taef1 -- Home</title>
 
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
     <header id="site-header" class="fixed-top">
         <section class="w3l-header-4">
             <div class="container">
-                  <nav class="navbar navbar-expand-lg navbar-light">
+                <nav class="navbar navbar-expand-lg navbar-light">
                     <h1>
                         <a class="navbar-brand" href="index.html">
                             <img src="assets/images/f1logo.png" alt="logo"
@@ -64,13 +64,13 @@
                     <div class="mobile-position">
                         <nav class="navigation">
                             <div class="theme-switch-wrapper">
-                                <div class="mode-container">
-                                    <label class="theme-switch" for="checkbox">
-                                        <input type="checkbox" id="checkbox">
+                                <label class="theme-switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox">
+                                    <div class="mode-container">
                                         <i class="gg-sun"></i>
                                         <i class="gg-moon"></i>
-                                    </label>
-                                </div>
+                                    </div>
+                                </label>
                             </div>
                         </nav>
                     </div>
@@ -79,7 +79,7 @@
         </section>
     </header>
     <!-- //header -->
-    <!-- 2022-8-1 title news -->
+    <!-- 2022-8-12 title news -->
     <section id="home" class="w3l-banner py-5">
         <div class="container py-lg-5 py-md-4">
             <div class="row align-items-center py-lg-4 py-md-3">
@@ -92,13 +92,13 @@
                     </p>
                     <div class="mt-sm-5 mt-4">
                         <a class="btn btn-primary btn-style" target="_blank" href="news.html"> 
-                        更多新闻 </a>
+                        最新新闻 </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- //2022-8-1 title news -->
+    <!-- //2022-8-12 title news -->
     <!-- home page about section -->
     <section class="w3l-bottom-grids-6 py-1" id="about">
         <div class="midd-w3 py-5">
@@ -118,9 +118,14 @@
                                 但他仍然以强大的实力夺回了第一。
                                 在他的努力下， 红牛以97分的领先优势进入了夏休期。
                             </p>
-                            <a target="_blank"
-                               href="https://www.formula1.com/en/latest/article.driver-of-the-day-verstappens-budapest-barnstormer-gets-your-vote.6MwjBriyORtn2bATx446Lt.html"
-                               class="btn btn-style btn-primary mt-lg-5 mt-4">得票详情</a>
+                            <div class="welcome-left text-center">
+                                <a target="_blank"
+                                   href="https://www.formula1.com/en/latest/article.driver-of-the-day-verstappens-budapest-barnstormer-gets-your-vote.6MwjBriyORtn2bATx446Lt.html"
+                                   class="btn btn-style btn-primary mt-lg-5 mt-4">得票详情</a>
+                                &emsp;&emsp; &emsp;&emsp;
+                                <a target="_blank" href="grids/hungrid1.html" 
+                                   class="btn btn-style btn-primary mt-lg-5 mt-4">比赛结果</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -284,7 +289,7 @@
                                     <img src="assets/images/location.png" width="20" height="20">&ensp;安徽省, 合肥市, 230001
                                 </p>
                             </li>
-                            <li><p><img src="assets/images/call.png" width="20" height="20">&ensp;+(86) 166 5511 6657</p></li>
+                            <!--<li><p><img src="assets/images/call.png" width="20" height="20">&ensp;</p></li>-->
                             <li>
                                 <p>
                                     <img src="assets/images/mail.png" width="20" height="20">
@@ -327,30 +332,21 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-list-29 footer-3 mt-4">
-                        <div class="properties">
-                            <h6 class="footer-title-29">加入我们</h6>
-                            <ul>
-                                <li>
-                                    <p>前端工程师</p>
-                                </li>
-                                <li>
-                                    <p>Web工程师</p>
-                                </li>
-                                <li>
-                                    <p>文字编辑</p>
-                                </li>
-                                <li>
-                                    <p>新闻翻译</p>
-                                </li>
-                                <li>
-                                    <p>运营维护</p>
-                                </li>
-                            </ul>
-                        </div>
+
+                        <h6 class="footer-title-29">F1 周边</h6>
+                        <ul>
+                            <li><a href="https://www.sparkmodel.com" target="_blank">spark 模型</a></li>
+                            <li>
+                                <a href="https://mall.jd.com/index-194822.html" target="_blank">比美高模型 - 京东</a>
+                            </li>
+                            <li>
+                                <a href="https://f1store4.formula1.com" target="_blank">F1 官方商城</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="row bottom-copies">
-                    <p class="copy-footer-29 col-lg-8">Copyright &copy; 2022.Taef1 All rights reserved.</p>
+                    <p class="copy-footer-29 col-lg-8">Copyright &copy; 2022.Taef1 All rights reserved. 备案号：皖ICP备2022011787号-1</p>
                     <ul class="list-btm-29 col-lg-4">
                         <li><a href="#link">隐私政策</a></li>
                     </ul>
@@ -379,8 +375,7 @@
             function topFunction() {
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
-            }
-        </script>
+            }</script>
         <!-- /move top -->
     </section>
     <!-- // footer -->

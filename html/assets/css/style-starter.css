@@ -14256,6 +14256,18 @@ a.link-style:hover:before {
     font-size: 38px;
     line-height: 46px;
     font-weight: 600;
+    color: var(--heading-color);
+}
+
+a.title-big {
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+a.title-big:hover {
+    color: var(--primary-color);
 }
 
 .title-points {
@@ -17328,7 +17340,7 @@ a.img-height {
     border-radius: 25px;
     border-bottom-style: none;
     border-left-style: none;
-
+    background-color: var(--bg-color);
 }
 
 .grid-pday {
@@ -17460,7 +17472,7 @@ a.img-height {
     border-radius: 12px;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     .points {
         display: -webkit-flex;
         display: flex;
@@ -17491,3 +17503,112 @@ a.img-height {
     margin-left: auto;
     margin-right: auto;
 }
+
+div.centerpag {
+    text-align: center;
+}
+
+ul.pagination {
+    font-family: SimHei;
+    font-size: 14px;
+    display: inline-block;
+    padding: 20px;
+}
+
+    ul.pagination li {
+        display: inline;
+    }
+
+        ul.pagination li a {
+            color: #999;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border-radius: 5px;
+            border: 1px solid #999;
+            width: 200px;
+        }
+
+            ul.pagination li a.active {
+                background-color: #FF0000;
+                color: white;
+                border-radius: 5px;
+                border: 1px solid #00000000;
+                width: 20px;
+            }
+
+ul.pagination li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 80%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+    #customers td, #customers th {
+        font-size: 1em;
+        padding: 15px 7px 14px 7px;
+    }
+
+    #customers th {
+        font-size: 1.1em;
+        text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #00000000;
+    }
+
+    #customers tr.alt td {
+        background-color: var(--bg-color);
+    }
+
+@media only screen and (max-width: 1000px) {
+    #customers {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        width: 100%;
+        border-collapse: collapse;
+        margin: auto;
+    }
+
+        #customers td, #customers th {
+            font-size: 1em;
+            padding: 15px 7px 14px 7px;
+        }
+
+        #customers th {
+            font-size: 1.1em;
+            text-align: left;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #00000000;
+        }
+
+        #customers tr.alt td {
+            background-color: var(--bg-color);
+        }
+}
+
+.title-table {
+    color: var(--heading-color);
+    margin-top: 1px;
+    display: block;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+.table-small {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: var(--heading-color);
+    margin-top: 5px;
+    display: block;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    font-size: 15px;
+    margin-right: 130px;
+}
+
